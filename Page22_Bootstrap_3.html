@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Bootstrap Structurée</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        .he1 {
+            height: 120px;
+            padding: 20px;
+            text-align: center;
+            background: rgb(182, 198, 225);
+            margin-bottom: 10px;
+        }
+
+        .f1 {
+            height: 80px;
+            padding: 20px;
+            text-align: center;
+            background: rgb(85, 86, 87);
+            color: white;
+            margin-top: 10px;
+
+        }
+
+        .n1 {
+            border: 2px solid red;
+            
+        }
+
+        .a1 {
+            border: 2px solid rgb(99, 189, 76);
+            background-color: bisque;
+            
+        }
+
+        .r1 {
+            height: 480px;
+        }
+
+        .im1 {
+            height: 120px;
+            width: auto;
+        }
+
+       
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header class="col-md-12 he1">
+        <h1>Mon Site</h1>
+        <p>Bienvenue sur notre site</p>
+    </header>
+
+    <div class="row r1">
+        <!-- Navigation latérale -->
+        <nav class="col-md-2  d-md-block bg-light sidebar n1">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" >Contact</a>
+                </li>
+              </ul>
+        </nav>
+
+        <!-- Contenu principal -->
+        <main class="col-md-8 ">
+            <div class="content p-4">
+                <h2>Bienvenue dans notre contenu principal</h2>
+                <p>Voici le contenu principal de la page...</p>
+            </div>
+        </main>
+
+        <asside class="col-md-2 a1">
+            <h3>à propos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nostrum nisi rem! Autem, iure porro voluptatum natus eaque quibusdam ducimus itaque veritatis soluta rerum quaerat doloribus voluptas quia ea sed?</p>
+        
+            <img src="https://i5.walmartimages.com/seo/SAMSUNG-Galaxy-Watch-4-40mm-BT-Pink-Gold-SM-R860NZDAXAA-Not-USA-Version_b0831758-8d31-4dbd-bc29-90ff6694292d.543c455362168b7273806c2f0d1af9ff.jpeg" class="im1">
+        </asside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="col-md-12 f1">
+        <p>&copy; 2024 Mon Site. Tous droits réservés.</p>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Ordinateurs Portables</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-left: 200px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Tableau Ordinateurs Portables</h1>
+    <table>
+        <!-- Utilisation de colspan pour fusionner trois colonnes dans l'en-tête -->
+        <tr>
+            <th colspan="3">Ordinateurs Portables - Modèles et Prix</th>
+        </tr>
+        <tr>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Prix (€)</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Apple</td> <!-- Utilisation de rowspan pour fusionner deux lignes -->
+            <td>MacBook Pro 14"</td>
+            <td>2249</td>
+        </tr>
+        <tr>
+            <td>MacBook Air M2</td>
+            <td>1299</td>
+        </tr>
+        <tr>
+            <td>Dell</td>
+            <td>XPS 13</td>
+            <td>1499</td>
+        </tr>
+        <tr>
+            <td rowspan="2">HP</td> <!-- Fusion de deux lignes pour HP -->
+            <td>Spectre x360</td>
+            <td>1399</td>
+        </tr>
+        <tr>
+            <td>Envy 13</td>
+            <td>999</td>
+        </tr>
+        <tr>
+            <td>Lenovo</td>
+            <td>ThinkPad X1 Carbon</td>
+            <td>1699</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Asus</td> <!-- Fusion de deux lignes pour Asus -->
+            <td>ZenBook 14</td>
+            <td>1299</td>
+        </tr>
+        <tr>
+            <td>ROG Zephyrus G14</td>
+            <td>1599</td>
+        </tr>
+    </table>
+</body>
+</html>

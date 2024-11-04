@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Bootstrap Structurée</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        .he1 {
+            height: 120px;
+            padding: 20px;
+            text-align: center;
+            background: rgb(184, 233, 179);
+            margin-bottom: 10px;
+        }
+
+        .f1 {
+            height: 80px;
+            padding: 20px;
+            text-align: center;
+            background: rgb(144, 74, 20);
+            color: white;
+            margin-top: 10px;
+
+        }
+
+        .n1 {
+            border: 2px solid red;
+            
+        }
+
+        .a1 {
+            border: 2px solid rgb(99, 189, 76);
+            
+        }
+
+        .r1 {
+            height: 480px;
+        }
+
+    .d3 {
+        position: relative;
+        top:5px;
+        left: 5px;
+        width: 100%;
+        background-color: antiquewhite;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    .d3 td {
+        padding: 10px;
+    }
+
+    .d3 h3 {
+        text-align: center;
+        color: blue;
+    }
+
+    .b4 {
+        padding: 10px;
+        border: 1px;
+        border-radius: 15px;
+        background-color: cornflowerblue;
+        color: aliceblue;
+    }
+
+    .b4:hover {
+
+        background-color: cadetblue;
+    }
+
+       
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header class="col-md-12 he1">
+        <h1>Mon Site</h1>
+        <p>Bienvenue sur notre site</p>
+    </header>
+
+    <div class="row r1">
+        <!-- Navigation latérale -->
+        <nav class="col-md-2  d-md-block bg-light sidebar n1">
+            
+        </nav>
+
+        <!-- Contenu principal -->
+        <main class="col-md-6 ">
+            <div class="content p-4">
+                <h2>Bienvenue dans notre contenu principal</h2>
+                <p>Voici le contenu principal de la page...</p>
+            </div>
+        </main>
+
+        <asside class="col-md-4 a1">
+
+            <div class="d3">
+
+                
+        
+                <form>
+                    <table>
+        
+                            <tr>
+                                <td>  <label>Nom</label> </td>
+                                <td> 
+                                    <input type="text" placeholder="Votre nom">  
+                                    <label class="req" >Champs obligatoire</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  <label>Prenom</label> </td>
+                                <td>  <input type="text" placeholder="Votre prénom"></td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>
+                                    <select name="spec">
+        
+                                        <option value="java">Java</option>
+                                        <option value="python">Python</option>
+                                        <option value="php">PHP</option>
+        
+        
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Experience</td>
+                                <td>
+                                    <input type="radio" name="g3" value="2ans">
+                                    <label> 2 ans</label>
+        
+                                    <input type="radio" name="g3" value="5ans">
+                                    <label>5 ans</label>
+                                </td>
+        
+                            </tr>
+                            <tr>
+                                <td>
+                                    CV
+                                </td>
+                                <td>
+                                    <input type="file" ><br>
+                                    <label class="req" >Champs obligatoire</label>
+                                </td>
+        
+                            </tr>
+        
+                            <tr>
+                                <td>Motivation</td>
+                                <td>
+                                    <textarea placeholder="Exprimez vous"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+        
+                                <td></td>
+                                <td><input type="submit" value="Send" class="b4"></td>
+                            </tr>
+        
+        
+                    </table>
+                </form>
+        
+            </div>
+
+        </asside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="col-md-12 f1">
+        <p>&copy; 2024 Mon Site. Tous droits réservés.</p>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

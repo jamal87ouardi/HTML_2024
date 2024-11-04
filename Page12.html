@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Voitures</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Tableau des Voitures</h1>
+    <table>
+        <tr>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Prix (€)</th>
+            <th>Image</th>
+            <th>Consulter</th>
+        </tr>
+        <tr>
+            <td>Tesla</td>
+            <td>Model S</td>
+            <td>89,990</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Tesla_Model_S_%28Facelift_ab_04-2016%29_trimmed.jpg/1200px-Tesla_Model_S_%28Facelift_ab_04-2016%29_trimmed.jpg" alt="Tesla Model S"></td>
+            <td><button >Consulter</button></td>
+        </tr>
+        <tr>
+            <td>BMW</td>
+            <td>i4</td>
+            <td>59,900</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4MyJ9IDFfimBH1HgWvba9JYq4LE1DBycKw&s" alt="BMW i4"></td>
+            <td><button >Consulter</button></td>
+        </tr>
+        <tr>
+            <td>Audi</td>
+            <td>e-tron GT</td>
+            <td>101,800</td>
+            <td><img src="https://uploads.audi-mediacenter.com/system/production/media/71164/images/a41672e1a01de586f023e4491da3f88548b52984/A1814539_blog.jpg?1698345785" alt="Audi e-tron GT"></td>
+            <td><button >Consulter</button></td>
+        </tr>
+    </table>
+</body>
+</html>

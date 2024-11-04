@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison Avancée Ordinateurs Portables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .image-cell img {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Comparaison Avancée des Ordinateurs Portables</h1>
+    <table>
+        <!-- En-tête avec colspan pour fusionner plusieurs colonnes -->
+        <tr>
+            <th colspan="8">Tableau Comparatif des Ordinateurs Portables - Caractéristiques, Prix et Images</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Marque</th>
+            <th rowspan="2">Modèle</th>
+            <th rowspan="2">Image</th>
+            <th colspan="2">Caractéristiques Techniques</th>
+            <th rowspan="2">Prix (€)</th>
+            <th rowspan="2">Évaluation</th>
+            <th rowspan="2">Disponibilité</th>
+        </tr>
+        <tr>
+            <th>Taille Écran</th>
+            <th>Processeur</th>
+        </tr>
+
+        <!-- Données avec rowspan et colspan combinés, plus colonne d'images -->
+        <tr>
+            <td rowspan="2">Apple</td>
+            <td>MacBook Pro 16"</td>
+            <td class="image-cell"><img src="https://linksolutions.ma/wp-content/uploads/2024/06/13435-macbook-pro-16-i9-24ghz-64gb-4tb-ssd-touche-bar-2014575238-linksolutions-ma.webp" alt="MacBook Pro 16"></td>
+            <td>16"</td>
+            <td>Apple M2 Pro</td>
+            <td>2999</td>
+            <td>★★★★★</td>
+            <td rowspan="2">En stock</td>
+        </tr>
+        <tr>
+            <td>MacBook Air 13"</td>
+            <td class="image-cell"><img src="https://images-cdn.ubuy.co.in/635c2e8385bb967bd400f2b0-apple-macbook-air-13-inch-retina.jpg" alt="MacBook Air 13"></td>
+            <td>13.3"</td>
+            <td>Apple M2</td>
+            <td>1249</td>
+            <td>★★★★☆</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Dell</td>
+            <td>XPS 15</td>
+            <td class="image-cell"><img src="https://mediazone.ma/uploads/images/products/15329/landing-page/image/laptop-xps-13-9340-pdp-display-sl.jpg" alt="Dell XPS 15"></td>
+            <td>15.6"</td>
+            <td>Intel Core i7</td>
+            <td>1849</td>
+            <td>★★★★☆</td>
+            <td rowspan="2">Rupture de stock</td>
+        </tr>
+        <tr>
+            <td>Inspiron 14</td>
+            <td class="image-cell"><img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/7441/pdp/notebook-inspiron-14-plus-7441-pdp-compatibility-windows-snapdragon.psd?fmt=jpg&wid=5000&hei=2812" alt="Dell Inspiron 14"></td>
+            <td>14"</td>
+            <td>Intel Core i5</td>
+            <td>749</td>
+            <td>★★★☆☆</td>
+        </tr>
+
+        <tr>
+            <td>Lenovo</td>
+            <td>ThinkPad X1 Carbon</td>
+            <td class="image-cell"><img src="data:image/jpeg;base64,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" alt="Lenovo ThinkPad X1 Carbon"></td>
+            <td>14"</td>
+            <td>Intel Core i7</td>
+            <td>1699</td>
+            <td>★★★★☆</td>
+            <td>En stock</td>
+        </tr>
+    </table>
+</body>
+</html>

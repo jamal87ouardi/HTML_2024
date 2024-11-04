@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+    position: relative;
+    top:60px;
+    left: 150px;
+    width: 420px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    }
+
+    .d1 td {
+        padding: 10px;
+    }
+
+    .b1 {
+
+        padding: 10px;
+        border-radius: 10px;
+        background-color: blueviolet;
+        color: aliceblue;
+        width: 150px;
+    }
+
+    .b1:hover {
+        background-color: rgb(187, 134, 237);
+
+    }
+
+    .req {
+
+        color: red;
+        font-size: 10pt;
+    }
+
+
+
+    .d1 h3 {
+
+        position: relative;
+        left:160px;
+    }
+
+
+
+    .d2 {
+        position: relative;
+        top:150px;
+        left: 150px;
+        width: 450px;
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .d2 h3 {
+        text-align: center;
+        color: chocolate;
+        
+    }
+
+    .d2 td {
+        padding: 10px;
+    }
+
+    .d2 textarea {
+
+        width: 250px;
+        border-radius: 5px;
+    }
+
+    .b3 {
+
+        background-color: chocolate;
+        padding: 10px;
+        color: aliceblue;
+        border-radius: 10px;
+    }
+
+    .b3:hover {
+        background-color: rgb(232, 173, 131);
+    }
+
+    .d2 input {
+        border-radius: 5px;
+    }
+
+
+
+    .d3 {
+        position: relative;
+        top:200px;
+        left: 150px;
+        width: 450px;
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .d3 td {
+        padding: 10px;
+    }
+
+    .d3 h3 {
+        text-align: center;
+        color: blue;
+    }
+
+    .b4 {
+        padding: 10px;
+        border: 1px;
+        border-radius: 15px;
+        background-color: cornflowerblue;
+        color: aliceblue;
+    }
+
+    .b4:hover {
+
+        background-color: cadetblue;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+
+    <div class="d1">
+        <h3>Inscription</h3>
+
+        <form>
+            <table>
+                <tr>
+                    <td>  <label>Nom</label> </td>
+                    <td> 
+                        <input type="text" placeholder="Votre nom">  
+                        <label class="req" >Champs requis</label>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td>  <label>Prenom</label> </td>
+                    <td>  <input type="text" placeholder="Votre prénom"></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td> <input type="submit"  class="b1" value="Envoyer"></td>
+                </tr>
+                
+
+            </table>
+        </form>
+
+    </div>
+
+
+
+    <div class="d2">
+
+        <h3>Informations</h3>
+        <form>
+            <table>
+
+                <tr>
+                    <td>  <label>Nom</label> </td>
+                    <td> 
+                        <input type="text" placeholder="Votre nom">  
+                        <label class="req" >Champs obligatoire</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>  <label>Prenom</label> </td>
+                    <td>  <input type="text" placeholder="Votre prénom"></td>
+                </tr>
+                <tr>
+                    <td> <label>Telephone</label> </td>
+                    <td> 
+                        <input type="tel">
+                        <label class="req" >Champs obligatoire</label>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td> <label> Sexe</label> </td>
+                    <td>
+                        <input type="radio" name="groupe_1" value="Homme">
+                        <label>Homme</label>
+
+                        <input type="radio" name="groupe_1" value="Femme">
+                        <label>Femme</label>
+
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td>  </td>
+                    <td> <input type="submit" value="Envoyer" class="b3"> </td>
+
+                </tr>
+
+
+
+
+
+
+
+
+            </table>
+        </form>
+
+
+    </div>
+
+    <div class="d3">
+
+        <h3>Candidature</h3>
+
+        <form>
+            <table>
+
+                    <tr>
+                        <td>  <label>Nom</label> </td>
+                        <td> 
+                            <input type="text" placeholder="Votre nom">  
+                            <label class="req" >Champs obligatoire</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>  <label>Prenom</label> </td>
+                        <td>  <input type="text" placeholder="Votre prénom"></td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td>
+                            <select name="spec">
+
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                                <option value="php">PHP</option>
+
+
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+
+                        <td></td>
+                        <td><input type="submit" value="Send" class="b4"></td>
+                    </tr>
+
+
+            </table>
+        </form>
+
+    </div>
+    
+</body>
+</html>
