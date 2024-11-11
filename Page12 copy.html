@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Divs</title>
+<style>
+  /* Styles communs pour les div */
+  .box {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  /* Media Query pour les écrans plus petits que 768px */
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 50%;
+      background-color: lightgreen;
+    }
+  }
+
+  /* Media Query pour les écrans plus petits que 576px */
+  @media screen and (max-width: 576px) {
+    .box {
+      width: 100%;
+      background-color: lightcoral;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="box" style="background-color: lightblue;"></div>
+<div class="box" style="background-color: lightsalmon;"></div>
+<div class="box" style="background-color: lightyellow;"></div>
+<div class="box" style="background-color: lightpink;"></div>
+<div class="box" style="background-color: lightcyan;"></div>
+<div class="box" style="background-color: lightseagreen;"></div>
+
+</body>
+</html>
