@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsive</title>
+  <style>
+
+    /* Styles de base pour le menu */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Affichage en ligne */
+  justify-content: space-around;
+  background-color: #333;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Changer le style du lien au survol */
+.menu a:hover {
+  background-color: #555;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 600px) {
+  .menu ul {
+    flex-direction: column; /* Passe en colonne pour un menu vertical */
+  }
+
+  .menu a {
+    text-align: center; /* Centrer les liens dans chaque élément */
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

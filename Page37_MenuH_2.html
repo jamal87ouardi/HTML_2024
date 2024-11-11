@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu avec Zone de Recherche</title>
+  <style>
+    /* Style de base pour le menu */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    nav {
+      background-color: #4A90E2;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      
+    }
+    /* Style pour les éléments de menu */
+    .menu {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      margin: 0 15px;
+    }
+    /* Style pour les liens du menu */
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 16px;
+      transition: background-color 0.3s;
+    }
+    .menu a:hover {
+      background-color: #357ABD;
+      border-radius: 4px;
+    }
+    /* Style pour la zone de recherche */
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+    .search-container input[type="text"] {
+      padding: 6px 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+      width: 200px;
+      transition: width 0.4s;
+    }
+    .search-container input[type="text"]:focus {
+      width: 250px;
+    }
+    .search-container button {
+      padding: 6px 10px;
+      background-color: #357ABD;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-left: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .search-container button:hover {
+      background-color: #285A91;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="menu">
+    <li><a href="#home">Accueil</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="search-container">
+    <input type="text" placeholder="Recherche...">
+    <button type="submit">Rechercher</button>
+  </div>
+</nav>
+
+</body>
+</html>

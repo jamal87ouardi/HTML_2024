@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Menu</title>
+  <style>
+    /* Vertical Menu Styles */
+    .vertical-menu {
+      width: 200px; /* Largeur du menu */
+      display: flex;
+      flex-direction: column;
+      background-color: #333; /* Couleur de fond du menu */
+    }
+
+    .vertical-menu a {
+      color: white; /* Couleur du texte */
+      padding: 12px; /* Espacement autour de chaque élément du menu */
+      text-decoration: none; /* Supprime le soulignement des liens */
+      font-size: 18px; /* Taille de la police */
+    }
+
+    .vertical-menu a:hover {
+      background-color: #575757; /* Couleur de fond au survol */
+    }
+
+    .vertical-menu a.active {
+      background-color: #4CAF50; /* Couleur de fond pour l'élément actif */
+      color: white; /* Couleur du texte pour l'élément actif */
+    }
+  </style>
+</head>
+<body>
+
+<div class="vertical-menu">
+  <a href="#" ">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+</body>
+</html>

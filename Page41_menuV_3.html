@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vertical avec Icônes d'Images</title>
+    <style>
+        /* Conteneur du menu vertical */
+        .vertical-menu {
+            width: 220px;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        /* Style des liens dans le menu */
+        .vertical-menu a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s;
+            border-bottom: 1px solid #444;
+        }
+
+        /* Style des images dans les liens */
+        .vertical-menu a img {
+            width: 20px;        /* Taille de l'icône */
+            height: 20px;
+            margin-right: 10px; /* Espace entre l'icône et le texte */
+        }
+
+        /* Couleur de fond au survol */
+        .vertical-menu a:hover {
+            background-color: #575757;
+        }
+
+        /* Lien actif */
+        .vertical-menu a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .s1 {
+            background-color: bisque;
+            position: relative;
+            top: 400px;
+            height:350px ;
+            margin-bottom: 400px;
+        }
+
+        .s2 {
+            background-color: rgb(167, 206, 175);
+            position: relative;
+            top: 400px;
+            height:350px ;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu" class="vertical-menu">
+    <a href="#s1" >
+        <img src="img/home_icone.png" alt="Accueil"> Accueil
+    </a>
+    <a href="#s2">
+        <img src="img/services_icone.png" alt="Services"> Services
+    </a>
+    <a href="#">
+        <img src="img/about_icone.png" alt="À propos"> À propos
+    </a>
+    <a href="#">
+        <img src="img/contact_icone.png" alt="Contact"> Contact
+    </a>
+</div>
+
+<section id="s1" class="s1">
+    <h3>Home Serction</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem numquam inventore voluptas dolorum beatae, iure provident expedita atque aliquid veritatis ea quisquam, ut libero, aspernatur accusantium quia fugit. Totam.</p>
+    <a href="#menu">top</a>
+</section>
+
+<section id="s2" class="s2">
+    <h3>Services</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem numquam inventore voluptas dolorum beatae, iure provident expedita atque aliquid veritatis ea quisquam, ut libero, aspernatur accusantium quia fugit. Totam.</p>
+    <a href="#menu">top</a>
+</section>
+
+</body>
+</html>
