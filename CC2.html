@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyages et Aventures</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Effet hover pour le menu */
+    .menu-hover .nav-link {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menu-hover .nav-link:hover {
+      background-color: #ff5722;
+      color: white;
+      border-radius: 5px;
+    }
+
+    /* Ajustement pour aligner les éléments dans l'en-tête */
+    .header-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="bg-primary text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Zone de recherche -->
+      <form class="d-flex" style="width: 50%;">
+        <input class="form-control me-2" type="search" placeholder="Rechercher une destination" aria-label="Search">
+        <button class="btn btn-light" type="submit">Rechercher</button>
+      </form>
+
+      <!-- Titre et icône -->
+      <div class="header-title">
+        <h1 class="h3 mb-0">Voyages et Aventures</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Icône globe" style="height: 40px;">
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Menu vertical -->
+      <nav class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body menu-hover">
+            <h5 class="card-title">Menu</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Conseils de Voyage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Cartes de destinations -->
+      <div class="col-md-9">
+        <h2 class="text-center mb-4">Découvrez nos Destinations</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="https://media.istockphoto.com/id/1150862958/fr/photo/plage-tropicale-%C3%A0-punta-cana-r%C3%A9publique-dominicaine-%C3%AEle-des-cara%C3%AFbes.jpg?s=612x612&w=0&k=20&c=7hRUcVAsuCqNiYxUR7_Y6M2tkH2lITnUm0_y7M2TJFI=" alt="Plage Tropicale" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Plage Tropicale</h5>
+                <p class="card-text">Échappez au quotidien sur une plage de sable fin et eaux turquoise.</p>
+                <a href="#" class="btn btn-primary">Explorer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://geonautrices.com/wp-content/uploads/2021/02/Micro-aventure-montagne-france.jpg" alt="Aventures en Montagne" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Aventures en Montagne</h5>
+                <p class="card-text">Découvrez des paysages majestueux et des sentiers à couper le souffle.</p>
+                <a href="#" class="btn btn-success">Explorer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://wineandtravelitaly.com/wp-content/uploads/2019/02/venice-1718664_960_720.jpg" alt="Venise Romantique" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Venise Italie</h5>
+                <p class="card-text">Naviguez à travers les canaux enchanteurs de cette ville historique.</p>
+                <a href="#" class="btn btn-danger">Explorer</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5>Liens utiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Destinations</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Conseils</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Abonnez-vous à notre Newsletter</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Entrez votre email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

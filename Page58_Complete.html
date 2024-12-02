@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Innov</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Effet hover pour le menu */
+    .menu-hover .nav-link {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menu-hover .nav-link:hover {
+      background-color: #0d6efd; /* Couleur primaire Bootstrap */
+      color: white; /* Texte en blanc au survol */
+      border-radius: 5px; /* Arrondi léger */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3">Tech Innov</h1>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+        <button class="btn btn-light" type="submit">Rechercher</button>
+      </form>
+      <a href="#" class="text-white">
+        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Facebook Icon" style="height: 30px;">
+      </a>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Menu vertical -->
+      <nav class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body menu-hover">
+            <h5 class="card-title">Menu</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Produits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">À propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Contenu principal -->
+      <div class="col-md-9">
+        <h2 class="text-center mb-4">Nos Produits</h2>
+        <table class="table table-bordered table-striped">
+          <thead class="table-dark text-center">
+            <tr>
+              <th>Image</th>
+              <th>Catégorie</th>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody class="text-center align-middle">
+            <tr>
+              <td><img src="https://cdn-icons-png.flaticon.com/512/1055/1055666.png" alt="Ordinateur Portable" style="height: 100px;"></td>
+              <td>Ordinateur Portable</td>
+              <td>Puissant, léger, et idéal pour le travail en mobilité.</td>
+              <td><a href="#" class="btn btn-primary">Voir Détails</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Smartphone" style="height: 100px;"></td>
+              <td>Smartphone</td>
+              <td>Un compagnon indispensable avec des performances exceptionnelles.</td>
+              <td><a href="#" class="btn btn-success">Voir Détails</a></td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png" alt="Casque Audio" style="height: 100px;"></td>
+              <td>Casque Audio</td>
+              <td>Qualité sonore immersive pour les mélomanes et les gamers.</td>
+              <td><a href="#" class="btn btn-dark">Voir Détails</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Liens utiles -->
+        <div class="col-md-6 mb-3">
+          <h5>Liens utiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Produits</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-md-6">
+          <h5>Abonnez-vous à notre Newsletter</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Entrez votre email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

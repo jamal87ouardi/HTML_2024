@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de Voitures</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .nav-link:hover {
+      color: #ffcc00 !important;
+      text-decoration: underline;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Conteneur principal -->
+  <div class="container">
+
+    <!-- Entête principale -->
+    <header class="bg-primary text-white text-center py-3">
+      <div class="d-flex align-items-center justify-content-between">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnfKZnTXaJc6zJ2t1rB-hvTGDWHuRlKY7ZRw&s" alt="Logo" class="logo" style="height: 50px;">
+        <h1 class="ms-3">Location de Voitures</h1>
+      </div>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        
+        <ul class="navbar-nav ms-auto flex-md-row flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nos Voitures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Réservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="my-4">
+      <div class="row">
+        <!-- Cartes de véhicules -->
+        <div class="col-md-8">
+          <div class="row">
+            <!-- Carte 1 : Voiture Compacte -->
+            <div class="col-md-4 mb-4">
+              <div class="card bg-light text-dark">
+                <div class="card-header bg-primary text-white text-center">
+                  Voiture Compacte
+                </div>
+                <img src="https://im.qccdn.fr/node/guide-d-achat-compacte-9955/thumbnail_800x480px-123858.jpg" class="card-img-top" alt="Voiture compacte" style="height: 200px;">
+                <div class="card-body">
+                  <p class="card-text">Idéale pour la ville, économique et facile à garer.</p>
+                </div>
+                <div class="card-footer bg-primary text-white text-center">
+                  <a href="#" class="btn btn-light">Réserver</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte 2 : SUV -->
+            <div class="col-md-4 mb-4">
+              <div class="card bg-light text-dark">
+                <div class="card-header bg-success text-white text-center">
+                  SUV
+                </div>
+                <img src="https://static1.caroom.fr/guide/wp-content/uploads/2021/11/vente-suv-peugeot-2008-1128x484.jpg" class="card-img-top" alt="SUV" style="height: 200px;">
+                <div class="card-body">
+                  <p class="card-text">Parfait pour les longs trajets avec confort et espace.</p>
+                </div>
+                <div class="card-footer bg-success text-white text-center">
+                  <a href="#" class="btn btn-light">Réserver</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte 3 : Voiture de Luxe -->
+            <div class="col-md-4 mb-4">
+              <div class="card bg-light text-dark">
+                <div class="card-header bg-dark text-white text-center">
+                  Voiture de Luxe
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIBNHxfVxc9AlbvwLjzTH7A0EPKSJNUCmEg&s" class="card-img-top" alt="Voiture de luxe" style="height: 200px;">
+                <div class="card-body">
+                  <p class="card-text">Conduisez avec élégance et confort.</p>
+                </div>
+                <div class="card-footer bg-dark text-white text-center">
+                  <a href="#" class="btn btn-light">Réserver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de connexion -->
+        <aside class="col-md-4 mb-4">
+          <div class="card bg-secondary text-white">
+            <div class="card-body">
+              <h3 class="card-title text-center">Connexion</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Nom d'utilisateur</label>
+                  <input type="text" class="form-control" id="username" placeholder="Entrez votre nom d'utilisateur">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Mot de passe</label>
+                  <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Connexion</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Menu 1 : Liens rapides -->
+          <div class="col-md-4">
+            <h5>Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Nos Voitures</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Réservation</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Menu 2 : Informations -->
+          <div class="col-md-4">
+            <h5>Informations</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">À propos</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Politique de confidentialité</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Conditions générales</a></li>
+              <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- Formulaire d'inscription à la newsletter -->
+          <div class="col-md-4">
+            <h5>Inscrivez-vous à notre newsletter</h5>
+            <form>
+              <div class="mb-3">
+                <label for="newsletter-email" class="form-label">Adresse email</label>
+                <input type="email" id="newsletter-email" class="form-control" placeholder="Entrez votre email">
+              </div>
+              <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Bas de page -->
+        <div class="text-center mt-4">
+          <p>&copy; 2024 Location de Voitures. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
