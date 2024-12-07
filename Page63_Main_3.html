@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .c2:hover {
+            transform: scale(1.05);
+            transition: transform 1s;
+        }
+
+        .c1 {
+            display: flex;
+            align-content: space-between;
+        }
+
+        .c1 ul {
+            list-style: none;
+            
+        }
+
+        .c1 a {
+            padding: 10px 50px 10px 50px;
+            background-color: rgb(146, 214, 228);
+            text-decoration: none;
+            
+            color: white;
+            width: 100px;
+            font-weight: bold;
+            
+            
+        }
+
+        .c1 a:hover {
+            
+            background-color: rgb(3, 13, 7);
+           
+            
+            
+        }
+        .c1 ul li a {
+            
+            text-decoration: none;
+            
+            color: white;
+            
+            
+        }
+
+        .c2 {
+            padding: 10px;
+            border: 1px solid rgb(187, 229, 161);
+            border-radius: 20px;
+            margin: 25px;
+        }
+
+        .c2 img {
+            width: 80%;
+        }
+
+        .c2 input[type="submit"] {
+            padding: 10px;
+            background-color: rgb(146, 214, 228);
+            color: aliceblue;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-weight: bold;
+            
+        }
+        .c2 input[type="submit"]:hover {
+            background-color: rgb(10, 10, 16);
+        }
+
+        .c2 input {
+            display: block;
+        }
+        .login-form {
+        background: #e3b4b4;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 95%;
+        text-align: center;
+    }
+
+    .login-form input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 780px) {
+        .c1 a {
+            width: 300px;
+            display: block;
+            
+            
+            
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="row">
+        <div class="c1 col-md-12">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Produits</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+
+        </div>
+        </div>
+        <div class="row">
+        <div class="c2 col-md-3">
+            <img src="https://www.techpro.ma/6982-medium_default/pc-portable-hp-15s-eq3000nk-6d6y2ea.jpg">
+            <h4>HP 15S</h4>
+            <p>Écran : Full HD d’une diagonale de 39,6 cm (15,6 pouces) (1920 x 1080), micro-bords, antireflet, 250 nits, 45 % NTSC 
+                Mémoire RAM Installée : 8 Go de mémoire RAM DDR4-3200 MHz (2 x 4 Go)</p>
+            <input type="submit" value="Voir plus ...">        
+        </div>
+        <div class="c2 col-md-3">
+            <img src="https://www.bestmark.ma/pub/media/catalog/product/cache/25b125dca8e1d433263f9ae299f7439b/n/b/nblat-3520-i7.jpg">
+            <h4>DELL Latitude 3520</h4>
+            <p>Profitez d’une connexion Wi-Fi fluide. ExpressConnect se connecte automatiquement aux points d’accès les plus puissants du bureau et donne priorité à la bande passante nécessaire aux applications de conférence, où que vous travailliez.</p>
+            <input type="submit" value="Voir plus ..."> 
+        </div>
+        <div class="c2 col-md-3">
+             <form class="login-form">
+                <input type="email" placeholder="Entrer votre mail">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+             </form>
+        </div>
+    </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
